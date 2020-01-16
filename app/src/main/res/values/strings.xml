@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Top-Github</string>
+    <string name="app_name">Github</string>
+    <string name="repository">Repository</string>
+    <string name="detail">Detail</string>
+
+    <string name="network_connection_error">Internet connection lost, please retry again</string>
+    <string-array name="Languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
 </resources>

@@ -21,9 +21,9 @@ android {
             buildConfigField("String", "BASE_URL", "\"https://github-trending-api.now.sh\"")
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField("String", "BASE_URL", "https://github-trending-api.now.sh")
+            buildConfigField("String", "BASE_URL", "\"https://github-trending-api.now.sh\"")
 
         }
     }
@@ -35,12 +35,15 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+
     testImplementation 'junit:junit:4.12'
-   // testImplementation "org.mockito:mockito-core:$mockito_version"
     testImplementation "android.arch.core:core-testing:$core_testing_version"
     testImplementation 'org.mockito:mockito-inline:2.13.0'
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
     // Material Design

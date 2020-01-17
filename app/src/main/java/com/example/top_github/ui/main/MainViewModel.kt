@@ -23,9 +23,6 @@ class MainViewModel(
      var data: MutableLiveData<List<ResponseData>> = MutableLiveData()
      val status: MutableLiveData<Status> = MutableLiveData()
 
-    public fun getData(): LiveData<List<ResponseData>> = data
-    public fun getStatus(): LiveData<Status> = status
-
     public fun setdata(data:MutableLiveData<List<ResponseData>>) {
         this.data = data
     }
@@ -49,6 +46,7 @@ class MainViewModel(
                     })
             )
         }
+
     }
     override fun onCreate() {
 

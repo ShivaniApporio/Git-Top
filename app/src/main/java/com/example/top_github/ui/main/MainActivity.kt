@@ -52,7 +52,7 @@ class MainActivity : BaseActivity<MainViewModel>() {
     }
     override fun setupObservers() {
         super.setupObservers()
-        viewModel.getData().observe(this, Observer {
+        viewModel.data.observe(this, Observer {
          mainAdapter.appenddata(it)
 
         })

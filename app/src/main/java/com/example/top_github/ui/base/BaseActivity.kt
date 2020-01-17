@@ -51,6 +51,7 @@ abstract class BaseActivity<VM : BaseViewModel> : AppCompatActivity() {
 
 
     fun showMessage(@StringRes resId: Int) = showMessage(getString(resId))
+
     fun showMessage(message: String) = Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 
     protected abstract fun injectDependancies(activityComponent: ActivityComponent)

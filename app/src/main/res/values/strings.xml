@@ -1,15 +1,11 @@
 <resources>
     <string name="app_name">Github</string>
-    <string name="repository">Repository</string>
+    <string name="repository">Repositories</string>
     <string name="detail">Detail</string>
-
+    <string name="description">Description : </string>
     <string name="network_connection_error">Internet connection lost, please retry again</string>
     <string-array name="Languages">
-        <item>Java</item>
         <item>Kotlin</item>
-        <item>Swift</item>
-        <item>Python</item>
-        <item>Scala</item>
-        <item>Perl</item>
+        <item>Java</item>
     </string-array>
 </resources>

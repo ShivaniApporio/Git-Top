@@ -59,7 +59,7 @@ class MainViewModelTest {
     }
 
     @Test
-    fun giveResponse_whenFetchingData_shouldShowData() {
+    fun giveResponse_whenFetchingData_shouldShowSuccess() {
         var response: List<ResponseData> = ArrayList()
         Mockito.doReturn(true).`when`(networkHelper).isInternetConnected()
         Mockito.doReturn(Single.just(response)).`when`(fetchRepository).fetchData("Kotlin")
